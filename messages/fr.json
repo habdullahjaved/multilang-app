@@ -1,0 +1,19 @@
+{
+  "HomePage": {
+    "title": "Bienvenue chez Buses Dubai",
+    "description": "Buses Dubai propose des services de transport haut de gamme et fiables à travers les Émirats arabes unis. Qu’il s’agisse de locations de bus privées, de transferts d’entreprise, de sorties scolaires ou de circuits touristiques, notre flotte moderne et climatisée garantit confort et sécurité à chaque trajet. Découvrez Dubaï ou organisez votre événement avec une solution de transport professionnelle et abordable.",
+    "btn-title": "Réserver maintenant"
+  },
+  "LocaleSwitcher": {
+    "label": "Changer la langue",
+    "locale": "{locale, select, en {Anglais} ar {Arabe} fr {Français} other {Inconnu}}"
+  },
+  "Navigation": {
+    "home": "Accueil",
+    "about": "À propos"
+  },
+  "AboutPage": {
+    "title": "À propos de Buses Dubai",
+    "description": "Buses Dubai est une société de transport de confiance spécialisée dans la location de bus et de vans aux Émirats arabes unis. Forte de plusieurs années d’expérience, elle s’engage à offrir des services sûrs, confortables et ponctuels aux entreprises, touristes, écoles et groupes privés. Notre mission : rendre vos déplacements simples, économiques et agréables à chaque fois."
+  }
+}

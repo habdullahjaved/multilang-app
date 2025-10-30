@@ -1,0 +1,19 @@
+{
+  "HomePage": {
+    "title": "Welcome to Buses Dubai",
+    "description": "Buses Dubai offers premium and reliable transport services across the UAE. From private bus rentals to corporate transfers, school trips, and group tours — our modern, air-conditioned fleet ensures safety, comfort, and convenience for every journey. Whether you're exploring Dubai or organizing an event, trust us for seamless, affordable, and professional travel solutions.",
+    "btn-title": "Book Now"
+  },
+  "LocaleSwitcher": {
+    "label": "Change Language",
+    "locale": "{locale, select, en {English} ar {Arabic} fr {French} other {Unknown}}"
+  },
+  "Navigation": {
+    "home": "Home",
+    "about": "About Us"
+  },
+  "AboutPage": {
+    "title": "About Buses Dubai",
+    "description": "Buses Dubai is a trusted transportation company specializing in bus and van rentals across the UAE. With years of experience and a commitment to excellence, we provide safe, comfortable, and punctual services for corporate clients, tourists, schools, and private groups. Our mission is to make travel simple, affordable, and enjoyable — every time."
+  }
+}

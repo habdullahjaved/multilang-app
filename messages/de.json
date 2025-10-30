@@ -1,0 +1,11 @@
+{
+  "HomePage": {
+    "title": "Welcome to Buses Dubai",
+    "description": "We are your premium transport service in Dubai. We provide a range of services to meet your travel needs, including bus rentals, shuttle services, and more. Our fleet is modern and well-maintained, ensuring a comfortable and safe journey for all our passengers. Whether you're planning a corporate event, a school trip, or just need transportation for a special occasion, we've got you covered. Experience the best in transport services with us.",
+    "btn-title": "Book Now"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, de {Deutsch} en {English} other {Unknown}}"
+  }
+}
