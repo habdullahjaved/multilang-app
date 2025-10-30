@@ -13,7 +13,30 @@ declare const messages: {
   },
   "Navigation": {
     "home": "Home",
-    "about": "About Us"
+    "buses": "Buses",
+    "about": "About"
+  },
+  "BusesPage": {
+    "title": "Our Bus Fleet",
+    "description": "Choose from our range of luxury, executive, and mini buses for your next journey in Dubai.",
+    "list": [
+      {
+        "name": "50 Seater Luxury Bus",
+        "slug": "50-seater-luxury-bus",
+        "description": "A spacious and air-conditioned luxury coach, perfect for large groups, events, and tours."
+      },
+      {
+        "name": "35 Seater Executive Bus",
+        "slug": "35-seater-executive-bus",
+        "description": "An executive-class bus offering premium comfort and smooth travel for business and airport transfers."
+      },
+      {
+        "name": "22 Seater Mini Bus",
+        "slug": "22-seater-mini-bus",
+        "description": "A compact and modern mini bus, ideal for small groups or family outings."
+      }
+    ],
+    "viewDetails": "View Details"
   },
   "AboutPage": {
     "title": "About Buses Dubai",

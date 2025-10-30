@@ -10,7 +10,30 @@
   },
   "Navigation": {
     "home": "Accueil",
+    "buses": "Autobus",
     "about": "À propos"
+  },
+  "BusesPage": {
+    "title": "Notre flotte de bus",
+    "description": "Choisissez parmi nos bus de luxe, exécutifs et mini pour votre prochain voyage à Dubaï.",
+    "list": [
+      {
+        "name": "Autobus de luxe 50 places",
+        "slug": "50-seater-luxury-bus",
+        "description": "Un autocar spacieux et climatisé, parfait pour les grands groupes, les événements et les circuits."
+      },
+      {
+        "name": "Autobus exécutif 35 places",
+        "slug": "35-seater-executive-bus",
+        "description": "Un bus de classe exécutive offrant un confort supérieur pour les transferts d'affaires ou d'aéroport."
+      },
+      {
+        "name": "Mini bus 22 places",
+        "slug": "22-seater-mini-bus",
+        "description": "Un mini bus compact et moderne, idéal pour les petits groupes ou les sorties en famille."
+      }
+    ],
+    "viewDetails": "Voir les détails"
   },
   "AboutPage": {
     "title": "À propos de Buses Dubai",
