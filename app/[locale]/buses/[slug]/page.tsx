@@ -1,26 +1,24 @@
-import { notFound } from "next/navigation";
+import { getBusBySlug, Bus } from "@/app/lib/api";
 
-type PageProps = {
-  params: { locale: string; slug: string };
+type Props = {
+  params: Promise<{ locale: string; slug: string }>;
 };
 
-export default async function BusPage({ params }: PageProps) {
+export default async function BusPage({ params }: Props) {
   const { locale, slug } = await params;
+  console.log(locale, "    =|=   ", slug);
+  const bus: Bus | null = await getBusBySlug(slug, locale);
 
-  const res = await fetch(
-    `${process.env.NEXT_PUBLIC_BASE_URL}/api/buses?locale=${locale}`,
-    { cache: "no-store" } // important for dynamic data
-  );
-  const buses = await res.json();
-
-  const bus = buses.find((b: any) => b.slug === slug);
-
-  if (!bus) return notFound();
+  if (!bus) return <p>Bus not found</p>;
 
   return (
-    <div className="max-w-4xl mx-auto px-6 py-10">
-      <h1 className="text-3xl font-bold mb-4">{bus.name}</h1>
-      <p className="text-gray-700">{bus.description}</p>
-    </div>
+    <article className="p-8">
+      {bus.image && (
+        <img src={bus.image.url} alt={bus.title} className="rounded-xl" />
+      )}
+      <h1 className="text-3xl font-bold mt-4">{bus.title}</h1>
+      <p className="mt-2">{bus.description}</p>
+      {bus.content && <div className="mt-6">{bus.content?.text}</div>}
+    </article>
   );
 }

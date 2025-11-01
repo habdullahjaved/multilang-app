@@ -7,6 +7,16 @@ const withNextIntl = createNextIntlPlugin({
   },
 });
 
-const config: NextConfig = {};
+const config: NextConfig = {
+  images: {
+    dangerouslyAllowSVG: true,
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "**.graphassets.com",
+      },
+    ],
+  },
+};
 
 export default withNextIntl(config);

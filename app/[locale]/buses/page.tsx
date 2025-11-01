@@ -1,22 +1,28 @@
-"use client";
+import NavigationLink from "@/app/components/NavigationLink";
+import { Bus, getBuses } from "@/app/lib/api";
 
-import { useTranslations } from "next-intl";
-import Card from "./Card";
+type Props = {
+  params: Promise<{ locale: string }>;
+};
 
-export default function BusesPage() {
-  const t = useTranslations("BusesPage");
-  const buses = t.raw("list"); // get raw array from JSON
+export default async function BusesPage({ params }: Props) {
+  const { locale } = await params;
+  const buses: Bus[] = await getBuses(locale);
 
   return (
-    <section className="max-w-6xl mx-auto px-6 py-10">
-      <h1 className="text-3xl font-bold text-gray-900 mb-2">{t("title")}</h1>
-      <p className="text-gray-600 mb-8">{t("description")}</p>
-
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {buses.map((bus: any) => (
-          <Card key={bus.slug} bus={bus} viewDetails={t("viewDetails")} />
-        ))}
-      </div>
-    </section>
+    <div className="grid gap-6 p-8">
+      {buses.map((bus) => (
+        <div key={bus.id} className="border rounded-xl p-4">
+          {bus.image && (
+            <img src={bus.image.url} alt={bus.title} className="rounded-xl" />
+          )}
+          <h2 className="font-bold mt-2">{bus.title}</h2>
+          <p>{bus.description}</p>
+          <NavigationLink href={`/buses/${bus.slug}`}>
+            {bus.title}
+          </NavigationLink>
+        </div>
+      ))}
+    </div>
   );
 }
