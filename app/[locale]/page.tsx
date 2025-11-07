@@ -21,6 +21,11 @@ export default function IndexPage() {
       <HeroSection />
       <div></div>
       <div className="my-10"></div>
+
+      {/* Why Choose Us */}
+      {/* About us */}
+      {/* Our Buses */}
+      {/* Blogs */}
     </>
   );
 }
